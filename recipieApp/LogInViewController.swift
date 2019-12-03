@@ -36,20 +36,20 @@ class LogInViewController: UIViewController {
         
     }
     
-    
-    @IBAction func logInTapped() {
-    
-
+  
     
     
+    
+    @IBAction func loginTapped() {
         guard usernameTextField.text == userName, paswordTextField.text == pasword
-        else {warningPopup(withTitle: "Invalid login or pasword", withMessage: "Please enter correct login/password")
-            return
+            else {warningPopup(withTitle: "Invalid login or pasword", withMessage: "Please enter correct login/password")
+                return
+        }
+            performSegue(withIdentifier: "recipie", sender: nil)
     }
-        performSegue(withIdentifier: "recepie", sender: nil)
-        
-    }
-    }
+    
+    
+}
     
 //end VC
 
@@ -71,7 +71,7 @@ extension LogInViewController: UITextFieldDelegate {
             textField.resignFirstResponder()
             paswordTextField.becomeFirstResponder()
         } else {
-            logInTapped()
+            loginTapped()
         }
         return true
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zok-ZP-0Cf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -94,13 +94,14 @@
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <action selector="logInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gO-gw-vVH"/>
+                                            <action selector="loginTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtQ-s9-M1d"/>
+                                            <segue destination="dvY-jm-f5e" kind="show" identifier="recipie" id="F2t-Dl-SrP"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNW-4z-O00">
-                                <rect key="frame" x="271" y="711" width="78" height="30"/>
+                                <rect key="frame" x="271" y="760" width="78" height="30"/>
                                 <color key="backgroundColor" red="0.3881022334" green="0.69574028249999997" blue="0.28564760090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2ag-2W-gLS"/>
@@ -144,12 +145,11 @@
                     <connections>
                         <outlet property="paswordTextField" destination="hFV-ln-7kU" id="TDX-On-Xjf"/>
                         <outlet property="usernameTextField" destination="Aqv-rW-EZp" id="v7e-Uf-6I6"/>
-                        <segue destination="dvY-jm-f5e" kind="push" identifier="recepie" id="wc2-rv-7ud"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527.536231884058" y="113.83928571428571"/>
+            <point key="canvasLocation" x="1403" y="164"/>
         </scene>
         <!--Item-->
         <scene sceneID="rSU-sU-yiM">
@@ -178,7 +178,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGh-oB-Qa2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="845"/>
+            <point key="canvasLocation" x="41" y="90"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Bfr-26-OLg">
@@ -247,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgX-nk-rip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2369.5652173913045" y="112.5"/>
+            <point key="canvasLocation" x="2349" y="163"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="14f-Ow-9Hp">
@@ -260,14 +260,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="c4S-Rr-zhs"/>
                         <segue destination="dvY-jm-f5e" kind="relationship" relationship="viewControllers" id="Qcg-NP-rGZ"/>
                         <segue destination="Zk3-rG-mgc" kind="relationship" relationship="viewControllers" id="R6Z-iI-WID"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19U-xV-cyr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+            <point key="canvasLocation" x="884" y="-638"/>
         </scene>
     </scenes>
     <resources>
@@ -278,6 +277,6 @@
         <image name="suit.heart.fill" catalog="system" width="64" height="54"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wc2-rv-7ud"/>
+        <segue reference="F2t-Dl-SrP"/>
     </inferredMetricsTieBreakers>
 </document>
