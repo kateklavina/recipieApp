@@ -20,7 +20,8 @@ class ListTableViewController: UITableViewController {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         manageObjectContext = appDelegate.persistentContainer.viewContext
-       
+        
+       loadData()
     }
 
  func loadData(){
