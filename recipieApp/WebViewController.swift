@@ -13,7 +13,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 
     @IBOutlet var webView: WKWebView!
     
-    var passedValue = ""
+    var passedValue = String()
     
     override func loadView() {
         webView = WKWebView()
@@ -24,8 +24,8 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = URL(string: passedValue)
-        webView.load(URLRequest(url: url!))
+        guard let url = URL(string: passedValue) else {return}
+        webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
     }
     
