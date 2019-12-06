@@ -10,6 +10,13 @@ import UIKit
 
 class FirstTableViewController: UITableViewController {
 var userName : String!
+    var list = [
+    "https://www.allrecipes.com/video/8158/mac-and-shews-vegan-mac-and-cheese/?internalSource=videocard&referringContentType=Search&clickId=cardslot%205",
+    "https://www.allrecipes.com/recipe/14830/hummus-iii/?internalSource=hub%20recipe&referringId=738&referringContentType=Recipe%20Hub",
+        "https://www.allrecipes.com/recipe/17165/big-soft-ginger-cookies/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%201",
+        "https://www.allrecipes.com/recipe/16330/stuffed-peppers/?internalSource=hub%20recipe&referringContentType=Search"
+    ]
+    
     
     var recepies = Recipie.createRecepie()
     
@@ -35,9 +42,7 @@ var userName : String!
 
         return cell
     }
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 150
-//    }
+
 
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
                
@@ -47,7 +52,21 @@ var userName : String!
                tableView.reloadData()
 
            }
+    
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .none
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Row at \(indexPath.row) !")
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc: WebViewController = storyBoard.instantiateViewController(identifier: "WebViewController") as! WebViewController
+        
+        vc.passedValue = list[indexPath.row]
+        
+        self.present(vc, animated: true, completion: nil)
+        
     }
 }

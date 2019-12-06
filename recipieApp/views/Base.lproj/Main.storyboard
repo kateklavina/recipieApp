@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="1834.7826086956522" y="-638.16964285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="8gl-7p-eyN">
             <objects>
-                <viewController id="v4g-Vd-PSO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="v4g-Vd-PSO" customClass="WebViewController" customModule="recipieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mSo-ap-8a6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,6 +100,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="2sE-O3-jKQ"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="xVr-4D-LJb" id="aVa-FE-WQP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pU-IT-u3K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

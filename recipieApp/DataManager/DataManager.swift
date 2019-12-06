@@ -25,5 +25,4 @@ class DataManager {
       "Stuffed Peppers"
       ]
     
-    
 }

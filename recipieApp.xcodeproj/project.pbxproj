@@ -20,6 +20,7 @@
 		09B0CB032395742900ADDBCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B0CB012395742900ADDBCC /* LaunchScreen.storyboard */; };
 		09CC7EC123958AC400F3ECD2 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC7EC023958AC400F3ECD2 /* FirstTableViewController.swift */; };
 		09CEA39F239A367E004EC01D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA39E239A367E004EC01D /* SignInViewController.swift */; };
+		09CEA3A2239A4A81004EC01D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA3A1239A4A81004EC01D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		09B0CB042395742900ADDBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09CC7EC023958AC400F3ECD2 /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		09CEA39E239A367E004EC01D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		09CEA3A1239A4A81004EC01D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				098478E623958685003AA7B0 /* delegates */,
-				09B0CAF72395742500ADDBCC /* LogInViewController.swift */,
+				09CEA3A0239A488C004EC01D /* New Group */,
 				09CC7EC023958AC400F3ECD2 /* FirstTableViewController.swift */,
 				099CFCFF2397A30E000A0028 /* ListTableViewController.swift */,
-				09CEA39E239A367E004EC01D /* SignInViewController.swift */,
 				095DB70D23983C2C00C07FA9 /* RecepieTableViewCell.swift */,
+				09CEA3A1239A4A81004EC01D /* WebViewController.swift */,
 				098478E523958675003AA7B0 /* views */,
 				09B0CAFF2395742900ADDBCC /* Assets.xcassets */,
 				095DB708239837DB00C07FA9 /* models */,
@@ -118,6 +120,15 @@
 				09B0CAFC2395742500ADDBCC /* recipieApp.xcdatamodeld */,
 			);
 			path = recipieApp;
+			sourceTree = "<group>";
+		};
+		09CEA3A0239A488C004EC01D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				09B0CAF72395742500ADDBCC /* LogInViewController.swift */,
+				09CEA39E239A367E004EC01D /* SignInViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B0CAF82395742500ADDBCC /* LogInViewController.swift in Sources */,
+				09CEA3A2239A4A81004EC01D /* WebViewController.swift in Sources */,
 				095DB70E23983C2C00C07FA9 /* RecepieTableViewCell.swift in Sources */,
 				095DB70C2398386000C07FA9 /* recipie.swift in Sources */,
 				09B0CAFE2395742500ADDBCC /* recipieApp.xcdatamodeld in Sources */,
