@@ -18,7 +18,9 @@ var userName : String!
        "https://www.allrecipes.com/recipe/13977/cherry-cheezecake/?clickId=right%20rail0&internalSource=rr_feed_recipe_sb&referringId=17393%20referringContentType%3Drecipe",
        "https://www.allrecipes.com/recipe/17393/best-carrot-cake-ever/?internalSource=hub%20recipe&referringId=1689&referringContentType=Recipe%20Hub&clickId=cardslot%2013",
        "https://www.allrecipes.com/recipe/20513/classic-waffles/?internalSource=streams&referringId=1316&referringContentType=Recipe%20Hub&clickId=st_trending_s",
-       "https://www.allrecipes.com/recipe/270200/cranberry-orange-rolls/?internalSource=staff%20pick&referringId=78&referringContentType=Recipe%20Hub&clickId=cardslot%201"
+       "https://www.allrecipes.com/recipe/270200/cranberry-orange-rolls/?internalSource=staff%20pick&referringId=78&referringContentType=Recipe%20Hub&clickId=cardslot%201",
+       "https://www.allrecipes.com/recipe/19852/caramel-brownies-iii/?internalSource=previously%20viewed&referringContentType=Homepage&clickId=cardslot%2014",
+       "https://www.allrecipes.com/recipe/44921/artichoke-salsa/?internalSource=rotd&referringId=1227&referringContentType=Recipe%20Hub"
     ]
     
     

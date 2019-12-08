@@ -19,7 +19,9 @@ class DataManager {
     "Cherry Cheezecake",
     "Carrot Cake",
     "Classic Waffles",
-    "Cranberry Orange Rolls"
+    "Cranberry Orange Rolls",
+    "Caramel Brownies",
+    "Artichoke Salsa"
     ]
     
     var picture = [
@@ -31,6 +33,8 @@ class DataManager {
       "Carrot Cake",
       "Classic Waffles",
       "Cranberry Orange Rolls",
+      "Caramel Brownies",
+      "Artichoke Salsa"
       ]
     
 }
