@@ -20,7 +20,11 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+     
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            // Get the new view controller using segue.destination.
@@ -36,7 +40,17 @@ class LogInViewController: UIViewController {
         
     }
     
-  
+  @objc func keyboardWillShow(notification: Notification) {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= 150
+            }
+        }
+        
+        @objc func keyboardWillHide(notification: Notification) {
+            if self.view.frame.origin.y != 0 {
+                self.view.frame.origin.y += 150
+            }
+        }
     
     
     

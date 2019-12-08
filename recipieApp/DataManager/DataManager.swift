@@ -15,14 +15,22 @@ class DataManager {
     "Vegan Mac and Cheese",
     "Hummus",
     "Big Soft Ginger Cookies",
-    "Stuffed Peppers"
+    "Stuffed Peppers",
+    "Cherry Cheezecake",
+    "Carrot Cake",
+    "Classic Waffles",
+    "Cranberry Orange Rolls"
     ]
     
     var picture = [
       "Vegan Mac and Cheese",
       "Hummus",
       "Big Soft Ginger Cookies",
-      "Stuffed Peppers"
+      "Stuffed Peppers",
+      "Cherry Cheezecake",
+      "Carrot Cake",
+      "Classic Waffles",
+      "Cranberry Orange Rolls",
       ]
     
 }

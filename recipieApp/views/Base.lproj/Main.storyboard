@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--First Table View Controller-->
         <scene sceneID="ZmT-qA-SU0">
             <objects>
                 <tableViewController id="dvY-jm-f5e" customClass="FirstTableViewController" customModule="recipieApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,7 +63,6 @@
                                 <connections>
                                     <outlet property="recepieImage" destination="AHx-f2-WyF" id="0ey-aU-Z9K"/>
                                     <outlet property="recepieLabel" destination="CmE-hG-mX2" id="s5G-vF-m1G"/>
-                                    <segue destination="v4g-Vd-PSO" kind="presentation" id="qck-fT-bUz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -72,7 +71,7 @@
                             <outlet property="delegate" destination="dvY-jm-f5e" id="VDA-5h-f9Z"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" image="suit.heart.fill" catalog="system" id="HLq-Md-8tH"/>
+                    <tabBarItem key="tabBarItem" title="" image="suit.heart.fill" catalog="system" id="HLq-Md-8tH"/>
                     <navigationItem key="navigationItem" id="uae-kY-m6i"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSL-PI-fvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -84,7 +83,7 @@
             <objects>
                 <viewController storyboardIdentifier="WebViewController" id="v4g-Vd-PSO" customClass="WebViewController" customModule="recipieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mSo-ap-8a6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xVr-4D-LJb">
@@ -120,10 +119,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="WRu-ME-Ghz">
-                                <rect key="frame" x="67" y="364" width="282" height="170"/>
+                                <rect key="frame" x="67.5" y="364" width="281" height="170"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kate" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aqv-rW-EZp">
-                                        <rect key="frame" x="0.0" y="0.0" width="282" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="1fo-rb-b8e"/>
                                             <constraint firstAttribute="height" constant="34" id="lUD-lS-g3p"/>
@@ -132,7 +131,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" borderStyle="roundedRect" placeholder="pasword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFV-ln-7kU">
-                                        <rect key="frame" x="0.0" y="65" width="282" height="34"/>
+                                        <rect key="frame" x="0.0" y="65" width="281" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="ZnM-vK-6dP"/>
                                             <constraint firstAttribute="height" constant="34" id="gav-z2-Tfz"/>
@@ -141,7 +140,7 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIH-IM-JSF">
-                                        <rect key="frame" x="0.0" y="130" width="282" height="40"/>
+                                        <rect key="frame" x="0.0" y="130" width="281" height="40"/>
                                         <color key="backgroundColor" red="0.38621222970000002" green="0.69563788179999997" blue="0.28273168209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="66a-ox-wFd"/>
@@ -149,26 +148,17 @@
                                         </constraints>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Log In"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtQ-s9-M1d"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNW-4z-O00">
-                                <rect key="frame" x="271" y="760" width="78" height="30"/>
-                                <color key="backgroundColor" red="0.3881022334" green="0.69574028249999997" blue="0.28564760090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="2ag-2W-gLS"/>
-                                </constraints>
-                                <state key="normal" title="Sign in">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="TtI-bl-Ejo" kind="show" id="C2j-DJ-tSO"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="aku-Pe-AWe">
                                 <rect key="frame" x="113" y="132" width="190" height="190"/>
                                 <constraints>
@@ -176,21 +166,40 @@
                                     <constraint firstAttribute="height" constant="190" id="bRe-y8-Nkn"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNW-4z-O00">
+                                <rect key="frame" x="67" y="552" width="282" height="40"/>
+                                <color key="backgroundColor" red="0.3881022334" green="0.69574028249999997" blue="0.28564760090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="2Gn-f5-0w1"/>
+                                    <constraint firstAttribute="height" constant="40" id="dg4-Hy-AA9"/>
+                                </constraints>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="TtI-bl-Ejo" kind="show" id="C2j-DJ-tSO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="LQB-0Y-1dJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="19R-bU-l7u"/>
+                            <constraint firstItem="kNW-4z-O00" firstAttribute="centerX" secondItem="WRu-ME-Ghz" secondAttribute="centerX" id="2H3-YP-xm3"/>
                             <constraint firstItem="LQB-0Y-1dJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3tb-AZ-YiM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kNW-4z-O00" secondAttribute="bottom" constant="72" id="AkC-pd-pwA"/>
                             <constraint firstItem="aku-Pe-AWe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="Atu-iD-OBB"/>
                             <constraint firstItem="LQB-0Y-1dJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ur2-6t-Reb"/>
+                            <constraint firstItem="kNW-4z-O00" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="a8f-27-fzy"/>
+                            <constraint firstItem="kNW-4z-O00" firstAttribute="top" secondItem="wIH-IM-JSF" secondAttribute="bottom" constant="18" id="aph-XW-ViQ"/>
                             <constraint firstAttribute="bottom" secondItem="LQB-0Y-1dJ" secondAttribute="bottom" id="cqG-nD-Xy3"/>
                             <constraint firstItem="WRu-ME-Ghz" firstAttribute="top" secondItem="aku-Pe-AWe" secondAttribute="bottom" constant="42" id="drL-4V-osW"/>
                             <constraint firstItem="aku-Pe-AWe" firstAttribute="centerX" secondItem="WRu-ME-Ghz" secondAttribute="centerX" id="gIj-Si-lWL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kNW-4z-O00" secondAttribute="trailing" constant="65" id="iAa-Xk-H03"/>
                             <constraint firstItem="aku-Pe-AWe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="lc5-gO-9mN"/>
-                            <constraint firstItem="kNW-4z-O00" firstAttribute="trailing" secondItem="WRu-ME-Ghz" secondAttribute="trailing" id="uzx-R7-bwl"/>
-                            <constraint firstItem="kNW-4z-O00" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="271" id="xGL-mC-wFG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -205,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-220" y="-638"/>
+            <point key="canvasLocation" x="-220.28985507246378" y="-638.16964285714278"/>
         </scene>
         <!--Grocery List -->
         <scene sceneID="rSU-sU-yiM">
@@ -290,6 +299,11 @@
                                         </constraints>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Sign In"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="signInTapped" destination="TtI-bl-Ejo" eventType="touchUpInside" id="wC4-V1-p93"/>
                                             <segue destination="Zok-ZP-0Cf" kind="show" id="Wuj-vb-rD5"/>
@@ -329,6 +343,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.93574396689999995" green="0.99374595210000005" blue="0.95046289289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.38621222970000002" green="0.69563788179999997" blue="0.28273168209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.93574396689999995" green="0.99374595210000005" blue="0.95046289289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="dvY-jm-f5e" kind="relationship" relationship="viewControllers" id="Qcg-NP-rGZ"/>
@@ -339,11 +356,13 @@
             </objects>
             <point key="canvasLocation" x="884" y="-638"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="ZPr-mj-dWY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="neS-KJ-28U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="list.dash" catalog="system" id="VRt-9E-H6t"/>
+                    <tabBarItem key="tabBarItem" title="" image="list.dash" catalog="system" id="VRt-9E-H6t">
+                        <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A9M-cD-RlU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -368,6 +387,6 @@
         <image name="suit.heart.fill" catalog="system" width="64" height="54"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Wuj-vb-rD5"/>
+        <segue reference="63h-kd-Jti"/>
     </inferredMetricsTieBreakers>
 </document>

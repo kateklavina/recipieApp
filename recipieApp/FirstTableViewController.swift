@@ -14,7 +14,11 @@ var userName : String!
     "https://www.allrecipes.com/video/8158/mac-and-shews-vegan-mac-and-cheese/?internalSource=videocard&referringContentType=Search&clickId=cardslot%205",
     "https://www.allrecipes.com/recipe/14830/hummus-iii/?internalSource=hub%20recipe&referringId=738&referringContentType=Recipe%20Hub",
         "https://www.allrecipes.com/recipe/17165/big-soft-ginger-cookies/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%201",
-        "https://www.allrecipes.com/recipe/16330/stuffed-peppers/?internalSource=hub%20recipe&referringContentType=Search"
+        "https://www.allrecipes.com/recipe/16330/stuffed-peppers/?internalSource=hub%20recipe&referringContentType=Search",
+       "https://www.allrecipes.com/recipe/13977/cherry-cheezecake/?clickId=right%20rail0&internalSource=rr_feed_recipe_sb&referringId=17393%20referringContentType%3Drecipe",
+       "https://www.allrecipes.com/recipe/17393/best-carrot-cake-ever/?internalSource=hub%20recipe&referringId=1689&referringContentType=Recipe%20Hub&clickId=cardslot%2013",
+       "https://www.allrecipes.com/recipe/20513/classic-waffles/?internalSource=streams&referringId=1316&referringContentType=Recipe%20Hub&clickId=st_trending_s",
+       "https://www.allrecipes.com/recipe/270200/cranberry-orange-rolls/?internalSource=staff%20pick&referringId=78&referringContentType=Recipe%20Hub&clickId=cardslot%201"
     ]
     
     
