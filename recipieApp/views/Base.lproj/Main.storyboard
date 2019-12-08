@@ -123,19 +123,23 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kate" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aqv-rW-EZp">
                                         <rect key="frame" x="0.0" y="0.0" width="281" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="1fo-rb-b8e"/>
                                             <constraint firstAttribute="height" constant="34" id="lUD-lS-g3p"/>
                                         </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" borderStyle="roundedRect" placeholder="pasword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFV-ln-7kU">
                                         <rect key="frame" x="0.0" y="53" width="281" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="ZnM-vK-6dP"/>
                                             <constraint firstAttribute="height" constant="34" id="gav-z2-Tfz"/>
                                         </constraints>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
@@ -193,8 +197,8 @@
                                     <constraint firstAttribute="height" constant="188" id="9xs-ZH-bq2"/>
                                 </constraints>
                                 <string key="text">Don't have ideas for diner recepie? Want to make something sweet? Log In and check the newest recepies ,plus make shoping list, so you don't forget to buy something important in everyday rush.</string>
-                                <color key="textColor" red="0.38621222970000002" green="0.69563788179999997" blue="0.28273168209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <color key="textColor" red="0.93574396689999995" green="0.99374595210000005" blue="0.95046289289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -284,6 +288,7 @@
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ix5-Ca-hft">
                                         <rect key="frame" x="0.5" y="229" width="281" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="89Q-pO-bLj"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="Ear-U9-fNv"/>
@@ -293,6 +298,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pasword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jcf-sf-FhS">
                                         <rect key="frame" x="0.5" y="302" width="281" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Rr8-kO-rTH"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="eba-jF-vva"/>
