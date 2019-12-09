@@ -61,6 +61,13 @@ class SignInViewController: UIViewController {
         goToWelcomeViewController()
     }
     
+    @IBAction func closeButtonTapped(_ sender: Any) {
+       
+        dismiss(animated: true, completion: nil)
+        let defaults = UserDefaults.standard
+            defaults.synchronize()
+        
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)

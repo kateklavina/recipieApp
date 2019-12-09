@@ -9,9 +9,11 @@
 import UIKit
 
 class FirstTableViewController: UITableViewController {
+    
 var userName : String!
+    
     var list = [
-    "https://www.allrecipes.com/video/8158/mac-and-shews-vegan-mac-and-cheese/?internalSource=videocard&referringContentType=Search&clickId=cardslot%205",
+        "https://www.allrecipes.com/video/8158/mac-and-shews-vegan-mac-and-cheese/?internalSource=videocard&referringContentType=Search&clickId=cardslot%205",
     "https://www.allrecipes.com/recipe/14830/hummus-iii/?internalSource=hub%20recipe&referringId=738&referringContentType=Recipe%20Hub",
         "https://www.allrecipes.com/recipe/17165/big-soft-ginger-cookies/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%201",
         "https://www.allrecipes.com/recipe/16330/stuffed-peppers/?internalSource=hub%20recipe&referringContentType=Search",
@@ -25,6 +27,9 @@ var userName : String!
     
     
     var recepies = Recipie.createRecepie()
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +54,12 @@ var userName : String!
         return cell
     }
 
-
+    @IBAction func closeButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        let defaults = UserDefaults.standard
+            defaults.synchronize()
+    }
+    
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
                
                
@@ -75,4 +85,7 @@ var userName : String!
         self.present(vc, animated: true, completion: nil)
         
     }
+    
+    
+    
 }

@@ -47,6 +47,13 @@ class ListTableViewController: UITableViewController {
      tableView.reloadData()
  }
 
+    
+    @IBAction func closeButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+               let defaults = UserDefaults.standard
+                   defaults.synchronize()
+    }
+    
     @IBAction func addListItem(_ sender: Any) {
         
         let alertController = UIAlertController(title: "Grocery Item", message: "What do you want to buy?", preferredStyle: .alert)

@@ -10,11 +10,11 @@
         <!--First Table View Controller-->
         <scene sceneID="ZmT-qA-SU0">
             <objects>
-                <tableViewController id="dvY-jm-f5e" customClass="FirstTableViewController" customModule="recipieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="overFullScreen" id="dvY-jm-f5e" customClass="FirstTableViewController" customModule="recipieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jOX-sF-dUs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.38621222970000002" green="0.69563788179999997" blue="0.28273168209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipieCell" rowHeight="234" id="RBH-5D-cuK" customClass="RecepieTableViewCell" customModule="recipieApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="234"/>
@@ -71,12 +71,17 @@
                             <outlet property="delegate" destination="dvY-jm-f5e" id="VDA-5h-f9Z"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="suit.heart.fill" catalog="system" id="HLq-Md-8tH"/>
-                    <navigationItem key="navigationItem" id="uae-kY-m6i"/>
+                    <navigationItem key="navigationItem" id="c0y-f1-SHR">
+                        <barButtonItem key="leftBarButtonItem" title="X" id="ctQ-mi-qUK">
+                            <connections>
+                                <action selector="closeButton:" destination="dvY-jm-f5e" id="SkA-Fe-LWW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSL-PI-fvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1834.7826086956522" y="-638.16964285714278"/>
+            <point key="canvasLocation" x="2744.9275362318845" y="-638.16964285714278"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="8gl-7p-eyN">
@@ -105,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pU-IT-u3K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2623.1884057971015" y="-638.16964285714278"/>
+            <point key="canvasLocation" x="3533.3333333333335" y="-638.16964285714278"/>
         </scene>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
@@ -245,9 +250,9 @@
         <!--Grocery List -->
         <scene sceneID="rSU-sU-yiM">
             <objects>
-                <tableViewController id="Zk3-rG-mgc" customClass="ListTableViewController" customModule="recipieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="overFullScreen" id="Zk3-rG-mgc" customClass="ListTableViewController" customModule="recipieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tqi-Gm-Eg9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -266,7 +271,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Grocery List " id="fwa-Ty-oKf">
+                        <barButtonItem key="leftBarButtonItem" title="X" id="78I-ut-B4p">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="closeButton:" destination="Zk3-rG-mgc" id="WMd-GK-jGY"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="bzG-tY-fme">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addListItem:" destination="Zk3-rG-mgc" id="lPR-oB-1pH"/>
                             </connections>
@@ -280,16 +292,16 @@
         <!--Sign In View Controller-->
         <scene sceneID="Bfr-26-OLg">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="TtI-bl-Ejo" customClass="SignInViewController" customModule="recipieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" modalPresentationStyle="overFullScreen" id="TtI-bl-Ejo" customClass="SignInViewController" customModule="recipieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dvl-dJ-xxI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assorted-citrus-fruits-and-vegetables-952476" translatesAutoresizingMaskIntoConstraints="NO" id="6Tq-9i-pID">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="yeh-Jg-fEa">
-                                <rect key="frame" x="66" y="122" width="282" height="415"/>
+                                <rect key="frame" x="66" y="166" width="282" height="415"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="Rco-TF-Vu4">
                                         <rect key="frame" x="46" y="0.0" width="190" height="190"/>
@@ -339,11 +351,27 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmW-Gf-3bm">
+                                <rect key="frame" x="20" y="44" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Icq-Az-mDp"/>
+                                    <constraint firstAttribute="width" constant="30" id="MEe-Z2-Jt0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="TtI-bl-Ejo" eventType="touchUpInside" id="Ype-tD-jPt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tq-9i-pID" firstAttribute="leading" secondItem="g1Q-N5-rmy" secondAttribute="leading" id="AmO-iE-RlG"/>
-                            <constraint firstItem="6Tq-9i-pID" firstAttribute="top" secondItem="g1Q-N5-rmy" secondAttribute="top" id="Jhe-DV-SJE"/>
+                            <constraint firstItem="HmW-Gf-3bm" firstAttribute="leading" secondItem="g1Q-N5-rmy" secondAttribute="leading" constant="20" id="Hv8-LF-ILM"/>
+                            <constraint firstItem="HmW-Gf-3bm" firstAttribute="top" secondItem="g1Q-N5-rmy" secondAttribute="top" id="Ir3-q0-bzG"/>
+                            <constraint firstItem="6Tq-9i-pID" firstAttribute="top" secondItem="g1Q-N5-rmy" secondAttribute="top" constant="-44" id="Jhe-DV-SJE"/>
                             <constraint firstItem="g1Q-N5-rmy" firstAttribute="trailing" secondItem="yeh-Jg-fEa" secondAttribute="trailing" constant="66" id="JwY-gU-iUG"/>
                             <constraint firstItem="yeh-Jg-fEa" firstAttribute="centerX" secondItem="g1Q-N5-rmy" secondAttribute="centerX" id="Pbj-Yh-ful"/>
                             <constraint firstAttribute="bottom" secondItem="6Tq-9i-pID" secondAttribute="bottom" id="ebq-1i-L9B"/>
@@ -360,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgX-nk-rip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-220" y="90"/>
+            <point key="canvasLocation" x="-220.28985507246378" y="89.732142857142847"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="sdu-V2-frt">
@@ -376,6 +404,7 @@
                                     <constraint firstAttribute="width" constant="30" id="ZlY-kn-Ezw"/>
                                     <constraint firstAttribute="height" constant="30" id="zu2-Pm-lHw"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <state key="normal" title="X">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -383,7 +412,7 @@
                                     <action selector="closeButtonTapped:" destination="nNx-c0-Qf9" eventType="touchUpInside" id="iWM-wL-Jo9"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="aIJ-HN-d66">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="aIJ-HN-d66">
                                 <rect key="frame" x="67" y="180" width="280" height="437"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="RMJ-Ro-jpY">
@@ -411,7 +440,7 @@
                         <constraints>
                             <constraint firstItem="aIJ-HN-d66" firstAttribute="centerX" secondItem="gye-p4-e2K" secondAttribute="centerX" id="LYT-CR-bjH"/>
                             <constraint firstItem="sNW-3z-NcY" firstAttribute="top" secondItem="gye-p4-e2K" secondAttribute="top" constant="20" id="ZZe-7E-mvu"/>
-                            <constraint firstItem="aIJ-HN-d66" firstAttribute="centerY" secondItem="gye-p4-e2K" secondAttribute="centerY" id="a4Z-g9-e8p"/>
+                            <constraint firstItem="aIJ-HN-d66" firstAttribute="centerY" secondItem="gye-p4-e2K" secondAttribute="centerY" constant="-5.5" id="a4Z-g9-e8p"/>
                             <constraint firstItem="sNW-3z-NcY" firstAttribute="leading" secondItem="gye-p4-e2K" secondAttribute="leading" constant="20" id="aBQ-bT-EWz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gye-p4-e2K"/>
@@ -424,9 +453,9 @@
         <!--Tab Bar Controller-->
         <scene sceneID="14f-Ow-9Hp">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Zok-ZP-0Cf" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overFullScreen" id="Zok-ZP-0Cf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="bRq-Y2-Vhc"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="has-lv-M9W">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -436,7 +465,7 @@
                         <color key="selectedImageTintColor" red="0.93574396689999995" green="0.99374595210000005" blue="0.95046289289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="dvY-jm-f5e" kind="relationship" relationship="viewControllers" id="Qcg-NP-rGZ"/>
+                        <segue destination="mHa-1w-FQX" kind="relationship" relationship="viewControllers" id="Qcg-NP-rGZ"/>
                         <segue destination="neS-KJ-28U" kind="relationship" relationship="viewControllers" id="R6Z-iI-WID"/>
                     </connections>
                 </tabBarController>
@@ -452,9 +481,11 @@
                         <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A9M-cD-RlU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="A9M-cD-RlU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.38621222970000002" green="0.69563788179999997" blue="0.28273168209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.38621222970000002" green="0.69563788179999997" blue="0.28273168209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -464,6 +495,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUW-bf-bwn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="883" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Rh-MF-r3a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mHa-1w-FQX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="suit.heart.fill" catalog="system" id="HLq-Md-8tH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ceM-zP-YSb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.38621222970000002" green="0.69563788179999997" blue="0.28273168209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dvY-jm-f5e" kind="relationship" relationship="rootViewController" id="fI2-TD-Y9b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uan-nq-cFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.7826086956522" y="-638.16964285714278"/>
         </scene>
     </scenes>
     <resources>
