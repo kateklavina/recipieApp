@@ -10,6 +10,7 @@
 		095DB70A2398383D00C07FA9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DB7092398383D00C07FA9 /* DataManager.swift */; };
 		095DB70C2398386000C07FA9 /* recipie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DB70B2398386000C07FA9 /* recipie.swift */; };
 		095DB70E23983C2C00C07FA9 /* RecepieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DB70D23983C2C00C07FA9 /* RecepieTableViewCell.swift */; };
+		099494DA239E304E008373AC /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099494D9239E304E008373AC /* InfoViewController.swift */; };
 		099CFD002397A30E000A0028 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099CFCFF2397A30E000A0028 /* ListTableViewController.swift */; };
 		09B0CAF42395742500ADDBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B0CAF32395742500ADDBCC /* AppDelegate.swift */; };
 		09B0CAF62395742500ADDBCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B0CAF52395742500ADDBCC /* SceneDelegate.swift */; };
@@ -27,6 +28,7 @@
 		095DB7092398383D00C07FA9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		095DB70B2398386000C07FA9 /* recipie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipie.swift; sourceTree = "<group>"; };
 		095DB70D23983C2C00C07FA9 /* RecepieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepieTableViewCell.swift; sourceTree = "<group>"; };
+		099494D9239E304E008373AC /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		099CFCFF2397A30E000A0028 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		09B0CAF02395742500ADDBCC /* recipieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B0CAF32395742500ADDBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				099CFCFF2397A30E000A0028 /* ListTableViewController.swift */,
 				095DB70D23983C2C00C07FA9 /* RecepieTableViewCell.swift */,
 				09CEA3A1239A4A81004EC01D /* WebViewController.swift */,
+				099494D9239E304E008373AC /* InfoViewController.swift */,
 				098478E523958675003AA7B0 /* views */,
 				09B0CAFF2395742900ADDBCC /* Assets.xcassets */,
 				095DB708239837DB00C07FA9 /* models */,
@@ -212,6 +215,7 @@
 				099CFD002397A30E000A0028 /* ListTableViewController.swift in Sources */,
 				09B0CAF62395742500ADDBCC /* SceneDelegate.swift in Sources */,
 				09CEA39F239A367E004EC01D /* SignInViewController.swift in Sources */,
+				099494DA239E304E008373AC /* InfoViewController.swift in Sources */,
 				09CC7EC123958AC400F3ECD2 /* FirstTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
