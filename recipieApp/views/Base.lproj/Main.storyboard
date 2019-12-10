@@ -33,6 +33,12 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </view>
                                             <blurEffect style="regular"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.Cornerradius">
+                                                    <integer key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
                                         </visualEffectView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmE-hG-mX2">
                                             <rect key="frame" x="20" y="96" width="374" height="42"/>
@@ -263,6 +269,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="tintColor" red="0.38621222970000002" green="0.69563788179999997" blue="0.28273168209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

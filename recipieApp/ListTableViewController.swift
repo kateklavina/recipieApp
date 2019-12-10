@@ -97,7 +97,7 @@ class ListTableViewController: UITableViewController {
         //cell .textLabel?.text = groseries[indexPath.row]
         let grocery = greseries[indexPath.row]
         cell.textLabel?.text = grocery.value(forKey: "name") as? String
-        cell.accessoryType = grocery.completed ? .checkmark : .none
+        cell.accessoryType = grocery.completed ? .checkmark : .none 
         
         return cell
     }
